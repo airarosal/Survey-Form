@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the form below:</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">
+      Enter your Name: 
+      <input id="name" type="text" name="name" required placeholder="Enter Name" />
+    </label> 
+    <br>
+    
+    <label id="email-label" for="email">
+      Enter your Email: 
+      <input id="email" type="email" name="email" required placeholder="Enter Email" />
+    </label> 
+    <br>
+    
+    <label id="number-label" for="number">
+      Enter your Age: 
+      <input id="number" type="number" name="number" min="0" max="100" required placeholder="Enter Age"/>
+    </label> 
+    <br>
+    
+    <label for="dropdown">Select your Education Level:
+      <select id="dropdown" name="education" required>
+        <option value="" disabled selected>(select one)</option>
+        <option value="high-school">High School</option>
+        <option value="college">College</option>
+        <option value="graduate">Graduate</option>
+        <option value="postgraduate">Postgraduate</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <legend>Select your academic interests:</legend>
+      <label for="radio1">
+        <input id="radio1" name="preference" type="radio" value="science" required /> Science
+      </label>
+      <br>
+      <label for="radio2">
+        <input id="radio2" name="preference" type="radio" value="arts" /> Arts
+      </label>
+      <br>
+      <label for="radio3">
+        <input id="radio3" name="preference" type="radio" value="commerce" /> Commerce
+      </label>
+    </fieldset>
+    <br>
+    
+    <fieldset>
+      <legend>Select your extracurricular activities:</legend>
+      <label for="checkbox1">
+        <input id="checkbox1" name="interest" type="checkbox" value="sports" /> Sports
+      </label>
+      <br>
+      <label for="checkbox2">
+        <input id="checkbox2" name="interest" type="checkbox" value="music" /> Music
+      </label>
+      <br>
+      <label for="checkbox3">
+        <input id="checkbox3" name="interest" type="checkbox" value="debate" /> Debate
+      </label>
+      <br>
+      <label for="checkbox4">
+        <input id="checkbox4" name="interest" type="checkbox" value="art" /> Art
+      </label>
+      <br>
+      <label for="none"> Others:
+        <input id="none" name="interest" type="text" />
+      </label>
+      <br>
+    </fieldset>
+    <br>
+    
+    <label for="comments">
+      Additional Comments:
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+    </label>
+    <br>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
